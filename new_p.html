@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AbdalluH Ahmed – Data Scientist</title>
+  <link rel="icon" href="https://img.icons8.com/fluency/48/combo-chart.png" type="image/png" />
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Portfolio of AbdalluH Ahmed – Data Scientist skilled in Python, SQL, Power BI, and Machine Learning. Real projects in scraping, EDA, and predictive modeling." />
+  <meta name="keywords" content="Data Science, Python, Machine Learning, SQL, Power BI, Data Analyst, Portfolio" />
+  <meta name="author" content="AbdalluH Ahmed" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AbdalluH Ahmed – Data Scientist" />
+  <meta property="og:description" content="Data Scientist | Python | SQL | Power BI | ML | EDA – Explore projects, skills, and contact details." />
+  <meta property="og:image" content="https://img.icons8.com/fluency/240/combo-chart.png" />
+  <meta property="og:url" content="https://your-domain-or-username.github.io/" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AbdalluH Ahmed – Data Scientist" />
+  <meta name="twitter:description" content="Portfolio with real projects in scraping, EDA, and predictive modeling." />
+  <meta name="twitter:image" content="https://img.icons8.com/fluency/240/combo-chart.png" />
+
+  <!-- Pre-apply theme to prevent flash -->
+  <script>
+    (function() {
+      try {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'dark' || (!stored && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+
+  <!-- Fonts + Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Enable class-based dark mode for Tailwind (required for the toggle to work)
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .bg-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+
+  <!-- ====== Navbar ====== -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-backdrop-blur:bg-white/70 bg-white/80 dark:bg-gray-900/80 border-b border-gray-200/60 dark:border-gray-800">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <img src="https://img.icons8.com/fluency/40/combo-chart.png" alt="Logo" class="w-8 h-8" loading="lazy" />
+        <span class="font-bold">AbdalluH Ahmed</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#journey" class="hover:text-indigo-600">Journey</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" aria-label="Toggle Dark Mode" class="rounded-xl px-3 py-2 text-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800">Theme</button>
+        <a href="C:\Users\Lenovo\OneDrive\Desktop\projects\protofile\assets\Abdalluh Ahmed Fathy_CV.pdf" download class="rounded-xl px-3 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ====== Hero ====== -->
+  <section id="home" class="bg-hero text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold flex justify-center items-center gap-3" data-aos="fade-up">
+        <img src="https://img.icons8.com/fluency/60/combo-chart.png" class="w-12 h-12" alt="Profile Icon" loading="lazy"/>
+        AbdalluH Ahmed
+      </h1>
+      <p class="text-lg md:text-xl mt-3" data-aos="fade-up" data-aos-delay="100">Data Scientist | Python | SQL | Power BI | ML | Excel</p>
+      <div class="mt-6 flex justify-center gap-3 flex-wrap" data-aos="fade-up" data-aos-delay="200">
+        <a href="https://github.com/AbdalluHAhmed387" class="px-5 py-2 bg-black text-white rounded-lg hover:bg-gray-800 flex items-center gap-2">
+          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" class="w-5 h-5" alt="GitHub" loading="lazy"/> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/abdalluhahmed387/" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 flex items-center gap-2">
+          <img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png" class="w-5 h-5" alt="LinkedIn" loading="lazy"/> LinkedIn
+        </a>
+        <a href="#projects" class="px-5 py-2 bg-white text-indigo-700 rounded-lg hover:bg-gray-100 font-semibold">View My Work ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== About + Skills ====== -->
+  <section id="about" class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-indigo-700 dark:text-indigo-400" data-aos="fade-right">About Me</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div class="text-left" data-aos="fade-up">
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          I'm <strong class="text-black dark:text-white">AbdalluH Ahmed</strong>, a dedicated Data Scientist with a strong analytical mindset and hands-on experience in data-driven decision-making. My expertise includes statistical modeling, machine learning, data visualization, and end-to-end data workflow automation.
+        </p>
+        <p class="mt-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          I transform raw datasets into actionable insights that support business strategy and innovation. With proficiency in Python, SQL, Power BI, and Excel, I build efficient, scalable solutions that drive value. I'm continuously expanding my skills and staying current with the latest trends in data science and AI.
+        </p>
+        <blockquote class="mt-6 italic text-indigo-600 dark:text-indigo-400">“Data is the new oil, but insight is the spark.”</blockquote>
+      </div>
+      <div id="skills" class="text-left" data-aos="fade-left">
+        <h3 class="text-xl font-semibold mb-4">Skills</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded dark:bg-indigo-700 dark:text-white">Python</span>
+          <span class="bg-green-100 text-green-800 px-3 py-1 rounded dark:bg-green-700 dark:text-white">Pandas</span>
+          <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded dark:bg-yellow-600 dark:text-white">SQL</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded dark:bg-blue-700 dark:text-white">Power BI</span>
+          <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded dark:bg-pink-700 dark:text-white">Scikit-learn</span>
+          <span class="bg-gray-200 text-gray-900 px-3 py-1 rounded dark:bg-gray-700 dark:text-white">Excel</span>
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded dark:bg-purple-700 dark:text-white">Machine Learning</span>
+          <span class="bg-red-100 text-red-800 px-3 py-1 rounded dark:bg-red-700 dark:text-white">Data Visualization</span>
+          <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded dark:bg-teal-700 dark:text-white">Git & GitHub</span>
+          <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded dark:bg-orange-700 dark:text-white">Streamlit</span>
+          <span class="bg-lime-100 text-lime-800 px-3 py-1 rounded dark:bg-lime-700 dark:text-white">Jupyter</span>
+          <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded dark:bg-sky-700 dark:text-white">NumPy</span>
+          <span class="bg-fuchsia-100 text-fuchsia-800 px-3 py-1 rounded dark:bg-fuchsia-700 dark:text-white">Seaborn</span>
+          <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded dark:bg-cyan-700 dark:text-white">Matplotlib</span>
+          <span class="bg-zinc-100 text-zinc-800 px-3 py-1 rounded dark:bg-zinc-700 dark:text-white">EDA</span>
+          <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded dark:bg-amber-700 dark:text-white">Dashboards</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Projects ====== -->
+  <section id="projects" class="py-16 bg-gradient-to-r from-purple-50 to-indigo-100 dark:from-gray-800 dark:to-gray-700 px-6">
+    <h2 class="text-3xl font-bold mb-10 text-center text-purple-800 dark:text-white" data-aos="zoom-in">Projects</h2>
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+      <!-- Motorcycle Project -->
+      <article class="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 text-center" data-aos="flip-left">
+        <img src="https://img.icons8.com/ios-filled/80/667eea/motorcycle.png" class="mx-auto mb-4" alt="Motorcycle Icon" loading="lazy" />
+        <h3 class="font-bold text-xl mb-2">Motorcycle Price Scraping</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm">Developed a web scraper using Python and BeautifulSoup to extract and analyze motorcycle price trends.</p>
+        <div class="mt-3 flex justify-center gap-3">
+          <a href="https://github.com/AbdalluHAhmed387/motrocycle" class="text-indigo-600 font-semibold hover:underline">View Code →</a>
+        </div>
+      </article>
+
+      <!-- IMDB Project -->
+      <article class="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 text-center" data-aos="flip-up">
+        <img src="https://img.icons8.com/color/96/imdb.png" class="mx-auto mb-4" alt="IMDB Icon" loading="lazy" />
+        <h3 class="font-bold text-xl mb-2">IMDB Movies Analysis</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm">Explored IMDB datasets using EDA to reveal top genres, movies, and ratings.</p>
+        <div class="mt-3 flex justify-center gap-3">
+          <a href="https://github.com/AbdalluHAhmed387/Movies" class="text-indigo-600 font-semibold hover:underline">Explore Notebook →</a>
+        </div>
+      </article>
+
+      <!-- Titanic Project -->
+      <article class="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 text-center" data-aos="flip-right">
+        <img src="https://img.icons8.com/ios-filled/80/667eea/cruise-ship.png" class="mx-auto mb-4" alt="Titanic Icon" loading="lazy" />
+        <h3 class="font-bold text-xl mb-2">Titanic Survival Prediction</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm">Built predictive models for survival using Logistic Regression & Decision Trees.</p>
+        <div class="mt-3 flex justify-center gap-3">
+          <a href="https://github.com/AbdalluHAhmed387/Titanic" class="text-indigo-600 font-semibold hover:underline">View Results →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+<!-- Certificates -->
+<section id="certificates" class="py-16 max-w-6xl mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-10 text-center text-indigo-700 dark:text-white">Certificates & Courses</h2>
+  
+  <div class="grid md:grid-cols-2 gap-6">
+    
+    <!-- Certificate 1 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow flex items-start gap-4" data-aos="fade-up">
+      <!-- Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="w-10 h-10 text-indigo-600 flex-shrink-0 mt-1" 
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+      </svg>
+
+      <div>
+        <h3 class="font-semibold">Data Science Professional</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          Digital Egypt Pioneers Initiative (DEPI), 2025
+        </p>
+        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700 dark:text-gray-300">
+          <li>Mastered Python for data cleaning and preprocessing.</li>
+          <li>Created data visualizations using Matplotlib and Seaborn.</li>
+          <li>Applied SQL queries for database management, schema design, data integration and reporting.</li>
+          <li>Utilized machine learning techniques for predictive analytics, feature engineering, MLOps basics.</li>
+          <li>Developed interactive dashboards with Streamlit for data presentation.</li>
+        </ul>
+        <a href="assets/DEPI_Certificate.pdf" target="_blank" 
+           class="text-indigo-600 text-sm mt-2 inline-block">View Credential →</a>
+      </div>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow flex items-start gap-4" data-aos="fade-up" data-aos-delay="100">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="w-10 h-10 text-indigo-600 flex-shrink-0 mt-1" 
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+      </svg>
+
+      <div>
+        <h3 class="font-semibold">Quantum Computing Internship</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          QWorld, 2025
+        </p>
+        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700 dark:text-gray-300">
+          <li>Explored quantum gates and matrix-based representations.</li>
+          <li>Implemented algorithms using Qiskit (e.g., Grover, Deutsch).</li>
+          <li>Collaborated on real-world projects in quantum computing.</li>
+        </ul>
+        <a href="assets/QWorld_Certificate.pdf" target="_blank" 
+           class="text-indigo-600 text-sm mt-2 inline-block">View Credential →</a>
+      </div>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="w-10 h-10 text-indigo-600 flex-shrink-0 mt-1" 
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+      </svg>
+
+      <div>
+        <h3 class="font-semibold">Machine Learning with Python</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          Coursera, 2024
+        </p>
+        <ul class="list-disc pl-5 mt-2 text-sm text-gray-700 dark:text-gray-300">
+          <li>Trained ML models using scikit-learn.</li>
+          <li>Worked with regression, classification, and clustering.</li>
+          <li>Applied feature engineering and model evaluation techniques.</li>
+        </ul>
+        <a href="assets/ML_Certificate.pdf" target="_blank" 
+           class="text-indigo-600 text-sm mt-2 inline-block">View Credential →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ====== Journey / Timeline ====== -->
+  <section id="journey" class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-indigo-700 dark:text-indigo-400" data-aos="fade-right">My Journey</h2>
+    <ol class="relative border-s border-gray-200 dark:border-gray-700" data-aos="fade-up">
+      <li class="mb-10 ms-6">
+        <span class="absolute -start-3 flex items-center justify-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-indigo-600"></span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold">QWorld Internship – Quantum Computing <span class="ms-2 text-xs font-medium px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 dark:bg-indigo-900/40 dark:text-indigo-200">Summer 2025</span></h3>
+        <p class="text-gray-600 dark:text-gray-300">Learned fundamentals of quantum algorithms, gates, and Qiskit programming.</p>
+      </li>
+      <li class="mb-10 ms-6">
+        <span class="absolute -start-3 flex items-center justify-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-indigo-600"></span>
+        <h3 class="mb-1 text-lg font-semibold">Data Science (Senior Year) – FCIS, Alexandria University <span class="ms-2 text-xs font-medium px-2 py-0.5 rounded bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">2024–2025</span></h3>
+        <p class="text-gray-600 dark:text-gray-300">Focused on ML, statistics, and Python-based analytics projects.</p>
+      </li>
+      <li class="mb-10 ms-6">
+        <span class="absolute -start-3 flex items-center justify-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-indigo-600"></span>
+        <h3 class="mb-1 text-lg font-semibold">Medicine & Computers – Alexandria University <span class="ms-2 text-xs font-medium px-2 py-0.5 rounded bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">Graduated</span></h3>
+        <p class="text-gray-600 dark:text-gray-300">Cross-disciplinary background enabling strong communication between tech and healthcare domains.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ====== Contact ====== -->
+  <section id="contact" class="py-20 bg-indigo-600 dark:bg-gray-900 text-white" data-aos="fade-in">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold mb-6">Let's Work Together</h2>
+      <p class="text-lg mb-10 max-w-2xl mx-auto">Have a project in mind or just want to say hi? I'm always open to new opportunities, collaborations, or a friendly chat.</p>
+
+      <!-- Contact buttons -->
+      <div class="flex justify-center gap-4 flex-wrap mb-8">
+        <a href="mailto:abdalluhahmedfathy@gmail.com" class="inline-flex items-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-black shadow-md">✉️ Email Me</a>
+        <a href="tel:+201282630711" class="inline-flex items-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-black shadow-md">📞 Call Me</a>
+      </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="bg-gray-100 dark:bg-gray-800 text-center py-6 text-sm text-gray-600 dark:text-gray-400">
+    <p>© <span id="year"></span> AbdalluH Ahmed — All Rights Reserved.</p>
+  </footer>
+
+  <!-- ====== Scripts ====== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Init AOS
+    AOS.init({ duration: 900, once: true });
+
+    // Theme toggle logic (with persistence)
+    (function() {
+      const btn = document.getElementById('themeToggle');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          const html = document.documentElement;
+          const nowDark = html.classList.toggle('dark');
+          try { localStorage.setItem('theme', nowDark ? 'dark' : 'light'); } catch (e) {}
+        });
+      }
+      // Footer year
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
