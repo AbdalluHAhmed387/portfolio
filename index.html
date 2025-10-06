@@ -65,6 +65,7 @@
     <div class="hidden md:flex items-center gap-6 text-sm">
       <a href="#about" class="hover:text-indigo-600">About</a>
       <a href="#skills" class="hover:text-indigo-600">Skills</a>
+      <a href="#services" class="hover:text-indigo-600">Services</a>
       <a href="#education" class="hover:text-indigo-600">Education</a>
       <a href="#projects" class="hover:text-indigo-600">Projects</a>
       <a href="#certificates" class="hover:text-indigo-600">Certificates</a>
@@ -110,29 +111,149 @@
       </p>
       <blockquote class="mt-6 italic text-indigo-600 dark:text-indigo-400">“Data is the new oil, but insight is the spark.”</blockquote>
     </div>
+
+    <!-- ====== Skills Section ====== -->
     <div id="skills" class="text-left" data-aos="fade-left">
       <h3 class="text-xl font-semibold mb-4">Skills</h3>
       <div class="flex flex-wrap gap-3">
-        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded dark:bg-indigo-700 dark:text-white">Python</span>
-        <span class="bg-green-100 text-green-800 px-3 py-1 rounded dark:bg-green-700 dark:text-white">Pandas</span>
-        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded dark:bg-yellow-600 dark:text-white">SQL</span>
-        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded dark:bg-blue-700 dark:text-white">Power BI</span>
-        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded dark:bg-pink-700 dark:text-white">Scikit-learn</span>
-        <span class="bg-gray-200 text-gray-900 px-3 py-1 rounded dark:bg-gray-700 dark:text-white">Excel</span>
-        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded dark:bg-purple-700 dark:text-white">Machine Learning</span>
-        <span class="bg-red-100 text-red-800 px-3 py-1 rounded dark:bg-red-700 dark:text-white">Data Visualization</span>
-        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded dark:bg-teal-700 dark:text-white">Git & GitHub</span>
-        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded dark:bg-orange-700 dark:text-white">Streamlit</span>
-        <span class="bg-lime-100 text-lime-800 px-3 py-1 rounded dark:bg-lime-700 dark:text-white">Jupyter</span>
-        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded dark:bg-sky-700 dark:text-white">NumPy</span>
-        <span class="bg-fuchsia-100 text-fuchsia-800 px-3 py-1 rounded dark:bg-fuchsia-700 dark:text-white">Seaborn</span>
-        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded dark:bg-cyan-700 dark:text-white">Matplotlib</span>
-        <span class="bg-zinc-100 text-zinc-800 px-3 py-1 rounded dark:bg-zinc-700 dark:text-white">EDA</span>
-        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded dark:bg-amber-700 dark:text-white">Dashboards</span>
+        <span class="skill-hover bg-indigo-100 text-indigo-800 px-3 py-1 rounded dark:bg-indigo-700 dark:text-white">Python</span>
+        <span class="skill-hover bg-green-100 text-green-800 px-3 py-1 rounded dark:bg-green-700 dark:text-white">Pandas</span>
+        <span class="skill-hover bg-yellow-100 text-yellow-800 px-3 py-1 rounded dark:bg-yellow-600 dark:text-white">SQL</span>
+        <span class="skill-hover bg-blue-100 text-blue-800 px-3 py-1 rounded dark:bg-blue-700 dark:text-white">Power BI</span>
+        <span class="skill-hover bg-pink-100 text-pink-800 px-3 py-1 rounded dark:bg-pink-700 dark:text-white">Scikit-learn</span>
+        <span class="skill-hover bg-gray-200 text-gray-900 px-3 py-1 rounded dark:bg-gray-700 dark:text-white">Excel</span>
+        <span class="skill-hover bg-purple-100 text-purple-800 px-3 py-1 rounded dark:bg-purple-700 dark:text-white">Machine Learning</span>
+        <span class="skill-hover bg-red-100 text-red-800 px-3 py-1 rounded dark:bg-red-700 dark:text-white">Data Visualization</span>
+        <span class="skill-hover bg-teal-100 text-teal-800 px-3 py-1 rounded dark:bg-teal-700 dark:text-white">Git & GitHub</span>
+        <span class="skill-hover bg-orange-100 text-orange-800 px-3 py-1 rounded dark:bg-orange-700 dark:text-white">Streamlit</span>
+        <span class="skill-hover bg-lime-100 text-lime-800 px-3 py-1 rounded dark:bg-lime-700 dark:text-white">Jupyter</span>
+        <span class="skill-hover bg-sky-100 text-sky-800 px-3 py-1 rounded dark:bg-sky-700 dark:text-white">NumPy</span>
+        <span class="skill-hover bg-fuchsia-100 text-fuchsia-800 px-3 py-1 rounded dark:bg-fuchsia-700 dark:text-white">Seaborn</span>
+        <span class="skill-hover bg-cyan-100 text-cyan-800 px-3 py-1 rounded dark:bg-cyan-700 dark:text-white">Matplotlib</span>
+        <span class="skill-hover bg-zinc-100 text-zinc-800 px-3 py-1 rounded dark:bg-zinc-700 dark:text-white">EDA</span>
+        <span class="skill-hover bg-amber-100 text-amber-800 px-3 py-1 rounded dark:bg-amber-700 dark:text-white">Dashboards</span>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ====== Hover Effect Style ====== -->
+<style>
+  .skill-hover {
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .skill-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.08);
+  }
+</style>
+
+<!-- ====== Services ====== -->
+<section id="services" class="py-16 px-6 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold mb-4 text-indigo-700 dark:text-indigo-400" data-aos="fade-right">
+    My Services
+  </h2>
+  <p class="text-lg text-gray-700 dark:text-gray-300 mb-12" data-aos="fade-up">
+    Delivering data-driven solutions that turn raw information into actionable insights and smarter business decisions.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-8" data-aos="fade-up">
+    <!-- Data Analysis -->
+    <div class="service-card bg-indigo-50 dark:bg-gray-800 p-6 rounded-xl shadow-md transition-all duration-300">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="bar-chart-3" class="w-6 h-6 text-indigo-600"></i>
+        <h3 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-300">Data Analysis</h3>
+      </div>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        Uncover trends, patterns, and relationships hidden within your data to support data-informed decisions.
+      </p>
+      <ul class="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-1">
+        <li>Data Cleaning & Preparation</li>
+        <li>Exploratory Data Analysis (EDA)</li>
+        <li>Statistical Modeling & Testing</li>
+        <li>Insight Discovery & Reporting</li>
+      </ul>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="service-card bg-indigo-50 dark:bg-gray-800 p-6 rounded-xl shadow-md transition-all duration-300">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="brain-circuit" class="w-6 h-6 text-indigo-600"></i>
+        <h3 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-300">Machine Learning</h3>
+      </div>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        Develop intelligent models that predict outcomes, automate decisions, and reveal deeper insights.
+      </p>
+      <ul class="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-1">
+        <li>Supervised & Unsupervised Learning</li>
+        <li>Model Training & Evaluation</li>
+        <li>Predictive Analytics & Forecasting</li>
+        <li>Model Deployment & Monitoring</li>
+      </ul>
+    </div>
+
+    <!-- Data Visualization -->
+    <div class="service-card bg-indigo-50 dark:bg-gray-800 p-6 rounded-xl shadow-md transition-all duration-300">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="pie-chart" class="w-6 h-6 text-indigo-600"></i>
+        <h3 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-300">Data Visualization</h3>
+      </div>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        Transform complex datasets into clear, interactive visuals that communicate stories and drive action.
+      </p>
+      <ul class="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-1">
+        <li>Interactive Dashboards (Power BI, Plotly)</li>
+        <li>Custom Visualization Design</li>
+        <li>Business Intelligence Reporting</li>
+        <li>Data Storytelling & Presentation</li>
+      </ul>
+    </div>
+
+    <!-- Web Scraping -->
+    <div class="service-card bg-indigo-50 dark:bg-gray-800 p-6 rounded-xl shadow-md transition-all duration-300">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="globe" class="w-6 h-6 text-indigo-600"></i>
+        <h3 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-300">Web Scraping</h3>
+      </div>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        Collect and structure real-world data from websites to power analytics, research, and business intelligence.
+      </p>
+      <ul class="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-1">
+        <li>Automated Web Scraping Pipelines</li>
+        <li>Data Cleaning & Structuring</li>
+        <li>API Integration & Data Storage</li>
+        <li>Continuous Data Collection & Scheduling</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="text-center mt-12" data-aos="fade-up">
+    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+      Ready to turn your data into impact?
+    </h3>
+    <a href="#contact" class="inline-block bg-indigo-600 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300">
+      Let's Work Together
+    </a>
+  </div>
+</section>
+
+<!-- ====== Hover Style (Like Projects) ====== -->
+<style>
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+  }
+</style>
+
+<!-- ====== Lucide Icons ====== -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+
+
 
 <!-- ====== Education ====== -->
 <section id="education" class="py-16 px-6 bg-gradient-to-r from-purple-50 to-indigo-100 dark:from-gray-800 dark:to-gray-700">
